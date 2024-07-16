@@ -85,7 +85,25 @@
   
   
   
-  
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
   
   /*-----------------------------------*\
     #RESET
@@ -932,7 +950,7 @@ ul {
 .skills-section {
   text-align: center;
   font-family: Arial, sans-serif;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 150px;
 }
 .skills-section h1 {
@@ -959,7 +977,88 @@ ul {
 
 /* My Projects */
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 50px;
+  background-color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  color: #ccc;
+}
+ul {
+  list-style-type: none;
+}
+#skills {
+  margin: 0 auto;
+  width: 40%;
+}
+#skills li {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 6px;
+  color: black;
+}
+.bar_container,
+.bar {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  content: "";
+}
+.bar_container {
+  bottom: -8px;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: right;
+}
+.bar {
+  top: 0;
+}
+.pct {
+  position: absolute;
+  top: -19px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.project-section {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 150px;
+  margin-bottom: 0px;
+}
+.project-section h1 {
+  font-size: 55px;
+  margin: 0;
+  color: black;
+}
+.project-section .subtitle {
+  color: blue;
+  font-size: 1.7em;
+  display: inline-block;
+  padding-bottom: 0 5px;
+}
+.project-section .subtitle:before,
+.project-section .subtitle:after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  vertical-align: middle;
+  margin: 0 10px;
+}
 .cards-list {
+  position: relative;
+  top: 0px;
+  bottom: 0;
   z-index: 0;
   width: 100%;
   display: flex;
@@ -1187,3 +1286,4 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 .message-me button:hover {
   background-color: #0056b3;
 }
+/* smooth scrolling */
