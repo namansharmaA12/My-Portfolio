@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+    <!---google font link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  
+    <!---custom css link--->
+    <!---preload images--->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+    <link rel="preload" as="image" href="./assets/images/Blog.svg">
+  
+  </head>
+  <body>
+
+    <!---#HEADER--->
+  
+    <header class="header" data-header>
+      <div class="container">
+        <a class="navbar-brand" href="#">Naman</a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="logo-light.svg" width="64" height="24" alt="Naman home">
+            </a>
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+          <div class="wrapper">
+            <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+            <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+          </div>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+  
+    
+
+
+    <main>
+      <article>
+        <!---#HERO--->
+  
+        <section class="section hero" aria-label="home">
+          <div class="container">
+  
+            <figure class="hero-banner">
+              <img src="assets/image.jpg" width="560" height="540" alt="Julia" class="w-100"
+                data-reveal="top">
+  
+              <img src="assets/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
+                data-reveal="top" data-reveal-delay="0.25s">
+            </figure>
+  
+            <div class="hero-content">
+  
+              <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+                I'm User Interface Designer & Developer.
+              </h1>
+  
+              <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+                Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very passionate
+                about the work that I do.
+              </p>
+  
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="#" class="btn btn-primary">See My Works</a>
+  
+                <a href="#" class="btn btn-secondary">Contact Me</a>
+              </div>
+  
+            </div>
+          </div>
+        </section>
+
+        <section class="villan">
+            <div class="heading">
+                <h1>About Me</h1>
+            </div>
+            <div class="anime">
+                <div class="villan-cnt">
+                    <h2>Who I Am</h2>
+                    <p>I’m Naman Nagwan and I’m a Web Developer, Designer, Front End Developer</p>
+                    <p>As a dynamic and enthusiastic 19-year-old individual with over ---- months of experience in front-end development, I specialize in creating visually appealing and user-friendly websites. My expertise includes HTML5, CSS3, Bootstrap, JavaScript, jQuery and crafting mobile-friendly interfaces.</p>
+                    <p>I excel in translating design concepts into functional code, ensuring seamless user experiences across devices. My skills in front-end development enable me to create responsive and interactive web solutions.</p>
+                    <p>With a strong foundation in web design and development, coupled with a passion for innovation and continuous learning, I am dedicated to delivering high-quality projects that drive user engagement and business success.</p>
+                </div>
+                <div class="villan-image">
+                    <img src="assets/pexels-kevin-ku-92347-577585.jpg">
+                </div>
+            </div>
+        </section>
+        <div class="skills-section">
+          <h1>My skills</h1>
+          <div class="subtitle">what i know</div>
+      </div>
+<!--My Skills-->
+<ul id="skills">
+  <li>
+    HTML5
+    <div class="bar_container">
+      <span class="bar" data-bar='{ "color": "#19f" }'>
+        <span class="pct">90%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    CSS3
+    <div class="bar_container">
+      <span class="bar" data-bar='{ "color": "#27ae60", "delay": 600 }'>
+        <span class="pct">90%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    JavaScript
+    <div class="bar_container">
+      <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+        <span class="pct">70%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    Bootstrap
+    <div class="bar_container">
+      <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 1800 }'>
+        <span class="pct">60%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    jQuery
+    <div class="bar_container">
+      <span class="bar" data-bar='{ "color": "#f05351", "delay": 2000 }'>
+        <span class="pct">50%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    Wordpress
+    <div class="bar_container">
+      <span class="bar" data-bar='{ "color": "#8f1c6d", "delay": 2100 }'>
+        <span class="pct">60%</span>
+      </span>
+    </div>
+  </li>
+</ul>
+
+<!--my projects-->
+<div class="skills-section">
+  <h1>My Projects</h1>
+  <div class="subtitle">Projects Done</div>
+</div>
+
+
+<div class="cards-list">
+  <div class="card 1">
+    <a href="https://ishanechoes.com/">
+    <div class="card_image"> <img src="assets/pexels-roshanravi-17647692 (1).jpg" /></div>
+  </a>
+    <div class="card_title title-white">
+      <p>Ishan Echoes</p>
+    </div>
+  </div>
+  
+    <div class="card 2">
+    <div class="card_image">
+      <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+      </div>
+    <div class="card_title title-white">
+      <p>Card Title</p>
+    </div>
+  </div>
+  
+  <div class="card 3">
+    <div class="card_image">
+      <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+    </div>
+    <div class="card_title">
+      <p>Card Title</p>
+    </div>
+  </div>
+    
+    <div class="card 4">
+    <div class="card_image">
+      <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+      </div>
+    <div class="card_title title-black">
+      <p>Card Title</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <h1>Work Experience</h1>
+    <div class="subtitle">highlights</div>
+  </div>
+
+<!--html for work experience-->
+<div class="villan-container">
+  <img src="assets/tangio-logo-v01 (1).png" alt="CIS Logo" class="logo">
+  <a href="#" class="title">Tangio Brand Solutions</a>
+  <div class="anime-content">
+      <p class="role"><strong>Web Developer Intern</strong>[June 2024 - july 2024]</p>
+      <ul>
+          <li>• Debugging and resolving issues in existing website</li>
+          <li>• Participating in code reviews</li>
+          <li>• Maintaining webpages using HTML5, CSS3, JavaScript and relevant Frameworks</li>
+          <li>• Team meetings to discuss progress and share</li>
+      </ul>
+  </div>
+</div>
+
+<div class="recom-letter">
+  <p class="role"><strong>Recommendation Letter</strong></p>
+</div>
+<img src="assets/recommandation letter.jpg" class="recom">
+
+
+<div class="skills-section">
+  <h1>Contact</h1>
+  <div class="subtitle">Get in Touch</div>
+</div>
+
+<section id="naman-contact">
+  <!-- <h2>Contact me</h2>
+  <a href="#contact" class="contact-link">get in touch</a> -->
+  <div class="naman-container">
+      <div class="get-in-touch">
+          <h3>Get in Touch</h3>
+          <p>If you are interested in working together? Please fill out the form aside with some info about your project and I will get back to you as soon as I can. Please allow a couple days for me to respond.</p>
+          <ul>
+              <li><i class="icon">👤</i> Name: Naman Nagwan</li>
+              <li><i class="icon">📍</i> Address: Saharanpur, UP</li>
+              <li><i class="icon">✉️</i> Email: namannagwansharma548@gmail.com</li>
+          </ul>
+      </div>
+      <div class="message-me">
+          <h3>Message me</h3>
+          <form action="#" method="post">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="text" name="subject" placeholder="Subject" required>
+              <textarea name="message" placeholder="Message.." required></textarea>
+              <button type="submit">Send message</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+    <!---#FOOTER--->
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          © 2022 codewithsadee. All rights reserved.
+        </p>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!---custom js link-->
+    <script src="./assets/js/script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--links for cards-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!---ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
