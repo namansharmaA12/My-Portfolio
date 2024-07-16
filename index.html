@@ -25,7 +25,7 @@
     <!---#HEADER--->
   
     <header class="header" data-header>
-      <div class="container">
+      <div class="container mx-auto p-4 flex justify-between items-center">
         <a class="navbar-brand" href="#">Naman</a>
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
@@ -36,28 +36,31 @@
               <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
           </div>
-          <ul class="navbar-list">
+          <ul class="navbar-list  flex space-x-4">
             <li>
               <a href="#" class="navbar-link">Home</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">About</a>
+              <a href="#about" class="navbar-link">About</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">Projects</a>
+              <a href="#skills" class="navbar-link">Skills</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">Blog</a>
+              <a href="#projects" class="navbar-link">Projects</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">Contact</a>
+              <a href="#work-experience" class="navbar-link">Work Experience</a>
+            </li>
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
             </li>
           </ul>
           <div class="wrapper">
             <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
             <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
           </div>
-          <ul class="social-list">
+          <ul class="social-list flex space-x-2">
             <li>
               <a href="#" class="social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
@@ -96,11 +99,10 @@
 
 
     <main>
-      <article>
         <!---#HERO--->
   
         <section class="section hero" aria-label="home">
-          <div class="container">
+          <div class="container mx-auto p-4">
   
             <figure class="hero-banner">
               <img src="assets/image.jpg" width="560" height="540" alt="Julia" class="w-100"
@@ -113,30 +115,24 @@
             <div class="hero-content">
   
               <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-                I'm User Interface Designer & Developer.
+                I'm User Interface Developer, Front-end Developer
               </h1>
   
               <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-                Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very passionate
+                Hello! I'm Naman, a freelance user interface designer & developer based in India. I’m very passionate
                 about the work that I do.
               </p>
-  
-              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-                <a href="#" class="btn btn-primary">See My Works</a>
-  
-                <a href="#" class="btn btn-secondary">Contact Me</a>
-              </div>
-  
             </div>
           </div>
         </section>
 
-        <section class="villan">
-            <div class="heading">
+        <section class="villan" id="about">
+          <div class="container mx-auto p-4"></div>
+            <div class="heading id="about">
                 <h1>About Me</h1>
             </div>
             <div class="anime">
-                <div class="villan-cnt">
+                <div class="villan-cnt w-1/2 pr-4">
                     <h2>Who I Am</h2>
                     <p>I’m Naman Nagwan and I’m a Web Developer, Designer, Front End Developer</p>
                     <p>As a dynamic and enthusiastic 19-year-old individual with over ---- months of experience in front-end development, I specialize in creating visually appealing and user-friendly websites. My expertise includes HTML5, CSS3, Bootstrap, JavaScript, jQuery and crafting mobile-friendly interfaces.</p>
@@ -148,11 +144,14 @@
                 </div>
             </div>
         </section>
-        <div class="skills-section">
+
+<!--My Skills-->
+
+        <div class="skills-section" id="skills">
+          <div class="container mx-auto p-4"></div>
           <h1>My skills</h1>
           <div class="subtitle">what i know</div>
       </div>
-<!--My Skills-->
 <ul id="skills">
   <li>
     HTML5
@@ -205,7 +204,8 @@
 </ul>
 
 <!--my projects-->
-<div class="skills-section">
+<div class="project-section" id="projects">
+  <div class="container mx-auto p-4"></div>
   <h1>My Projects</h1>
   <div class="subtitle">Projects Done</div>
 </div>
@@ -221,30 +221,30 @@
     </div>
   </div>
   
-    <div class="card 2">
+     <div class="card 2">
     <div class="card_image">
-      <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+      <!-- <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" /> -->
       </div>
     <div class="card_title title-white">
-      <p>Card Title</p>
+      <!-- <p>Card Title</p> -->
     </div>
   </div>
   
   <div class="card 3">
     <div class="card_image">
-      <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+      <!-- <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" /> -->
     </div>
     <div class="card_title">
-      <p>Card Title</p>
+      <!-- <p>Card Title</p> -->
     </div>
   </div>
     
     <div class="card 4">
     <div class="card_image">
-      <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+      <!-- <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" /> -->
       </div>
     <div class="card_title title-black">
-      <p>Card Title</p>
+      <!-- <p>Card Title</p> -->
     </div>
     </div>
   </div>
@@ -255,7 +255,8 @@
   </div>
 
 <!--html for work experience-->
-<div class="villan-container">
+<div class="villan-container" id="work-experience">
+  <div class="container mx-auto p-4"></div>
   <img src="assets/tangio-logo-v01 (1).png" alt="CIS Logo" class="logo">
   <a href="#" class="title">Tangio Brand Solutions</a>
   <div class="anime-content">
@@ -280,7 +281,8 @@
   <div class="subtitle">Get in Touch</div>
 </div>
 
-<section id="naman-contact">
+<section id="contact">
+  <div class="container mx-auto p-4"></div>
   <!-- <h2>Contact me</h2>
   <a href="#contact" class="contact-link">get in touch</a> -->
   <div class="naman-container">
@@ -305,6 +307,9 @@
       </div>
   </div>
 </section>
+
+
+
 
     <!---#FOOTER--->
     <footer class="footer">
@@ -341,6 +346,33 @@
         </ul>
       </div>
     </footer>
+
+
+    <!-- scroll bar js  -->
+    <script type="text/javascript">
+        var preogressbar = document.getElementById("preogressbar")
+        var percent = document.getElementById("percent")
+
+        var totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            var progress = (window.pageYOffset / totalHeight) * 100;
+            preogressbar.style.height = progress + "%";
+            percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%"
+        }
+    </script>
+     </script>
+
+     <!-- pre loader js  -->
+     <script>
+         var loader = document.getElementById("preloader");
+ 
+         window.addEventListener("load", function () {
+             loader.style.display = "none";
+         })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--scrolling -->
     <!---custom js link-->
     <script src="./assets/js/script.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
